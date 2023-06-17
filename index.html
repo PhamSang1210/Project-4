@@ -90,6 +90,15 @@
             content="./assets/Favicon/ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#ffffff" />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Embed Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&family=Sora:wght@600;700;800&display=swap"
+            rel="stylesheet"
+        />
         <!--Style CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
@@ -106,23 +115,27 @@
                     />
                     <!-- Navbar -->
                     <nav class="navbar">
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">Home</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">About</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">
-                                Services & Rates
-                            </a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">Reviews</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">Contacts us</a>
-                        </li>
+                        <ul class="nav__list">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">
+                                    Services & Rates
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Reviews</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"
+                                    >Contacts us</a
+                                >
+                            </li>
+                        </ul>
                     </nav>
                     <!-- Header Actions -->
                     <div class="header-action">
@@ -132,5 +145,88 @@
                 </div>
             </div>
         </header>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!--Hero media -->
+                    <div class="hero__media">
+                        <div class="hero__img-wrap">
+                            <img
+                                src="./assets/img/pet-01.png"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <!-- Decorators -->
+                            <img
+                                src="./assets/img/decor-02.svg"
+                                alt=""
+                                class="hero__decor hero__decor-left"
+                            />
+                            <img
+                                src="./assets/img/decor-01.svg"
+                                alt=""
+                                class="hero__decor hero__decor-right"
+                            />
+                        </div>
+
+                        <div class="hero__img-wrap hero__img-wrap--small">
+                            <img
+                                src="./assets/img/pet-02.png"
+                                alt=""
+                                class="hero__img hero__img-small"
+                            />
+                        </div>
+
+                        <div class="hero__list">
+                            <!-- Item 1 -->
+                            <div class="hero__list-item">
+                                <img
+                                    src="./assets/img/pet-03.png"
+                                    alt=""
+                                    class="hero__list-item__thumb"
+                                />
+                                <div class="hero__list-item--info">
+                                    <p class="hero__list-item--title">
+                                        Pet Health
+                                    </p>
+                                    <div
+                                        class="hero__list-item--skeleton"
+                                    ></div>
+                                    <div
+                                        class="hero__list-item--skeleton"
+                                        style="--width: 39px"
+                                    ></div>
+                                </div>
+                            </div>
+
+                            <div class="hero-list-item--sperate"></div>
+
+                            <!-- Item 2 -->
+                            <div class="hero__list-item">
+                                <img
+                                    src="./assets/img/pet-04.png"
+                                    alt=""
+                                    class="hero__list-item__thumb thumb"
+                                />
+                                <div class="hero__list-item--info">
+                                    <p class="hero__list-item--title">
+                                        Pet care
+                                    </p>
+                                    <div
+                                        class="hero__list-item--skeleton"
+                                    ></div>
+                                    <div
+                                        class="hero__list-item--skeleton"
+                                        style="--width: 39px"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hero Content -->
+                    <section class="hero__content"></section>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
