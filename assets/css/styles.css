@@ -292,7 +292,7 @@ a {
 
 /* about */
 .about {
-    margin-top: 207px;
+    margin-top: 138px;
 }
 
 .about__inner {
@@ -327,6 +327,10 @@ a {
     gap: 36px;
 }
 
+.about__media {
+    position: relative;
+}
+
 .about__checkitem {
     display: flex;
     align-items: center;
@@ -353,4 +357,69 @@ a {
     position: absolute;
     top: 3px;
     left: 5px;
+}
+
+.about__card {
+    position: absolute;
+    top: 165px;
+    left: 0;
+    padding: 30px 26px;
+    width: 136px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+    border-radius: 10px;
+}
+
+.about__card-title {
+    font-family: "Sora";
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.about__card-desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    text-align: center;
+    color: #c6f4f9;
+}
+
+.about__card-decor {
+    position: absolute;
+    top: -39px;
+    right: -30px;
+}
+
+.about__img-wrap {
+    width: 494px;
+    position: relative;
+    margin-left: auto;
+}
+
+.about__img {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+}
+
+.about__img-wrap::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    z-index: -1;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    box-shadow: 11px 18px 65px rgba(255, 155, 121, 0.12);
+    border-radius: 16px;
+    height: 336px;
+}
+
+.about__media-decor {
+    position: absolute;
+    top: 157px;
+    right: -51px;
+    z-index: -1;
 }
